@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass">
+  <Vendor>
+    <Name>C++ Module Vendor</Name>
+  </Vendor>
+  <DataTypes ><DataType><Name GUID="{086e0edc-52a2-4ce7-bf11-b19d3246607e}">COORDINATE</Name><SubItem><Name>fX</Name><Type GUID="{18071995-0000-0000-0000-00000000000d}">REAL</Type></SubItem><SubItem><Name>fY</Name><Type GUID="{18071995-0000-0000-0000-00000000000d}">REAL</Type></SubItem><SubItem><Name>fZ</Name><Type GUID="{18071995-0000-0000-0000-00000000000d}">REAL</Type></SubItem></DataType><DataType><Name GUID="{b7923ecb-ab6e-4ecf-8e2c-97df8062d915}">MUSCLE</Name><SubItem><Name>nPWM</Name><Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type></SubItem><SubItem><Name>nFan</Name><Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type></SubItem><SubItem><Name>fTemperature</Name><Type GUID="{18071995-0000-0000-0000-00000000000d}">REAL</Type></SubItem><Hides><Hide GUID="{bebdd621-3176-417b-81a6-e19c7227ccbc}" /><Hide GUID="{790f609f-d249-41b6-9c59-b127ea8cc564}" /></Hides></DataType><DataType><Name GUID="{8658b7fe-fc19-4a02-a6e2-45c5697d8362}">IMU</Name><SubItem><Name>sRotation</Name><Type GUID="{086e0edc-52a2-4ce7-bf11-b19d3246607e}">COORDINATE</Type></SubItem><SubItem><Name>sGyro</Name><Type GUID="{086e0edc-52a2-4ce7-bf11-b19d3246607e}">COORDINATE</Type></SubItem><SubItem><Name>sAcc</Name><Type GUID="{086e0edc-52a2-4ce7-bf11-b19d3246607e}">COORDINATE</Type></SubItem></DataType><DataType><Name GUID="{7c4606fa-c5b7-4059-afba-7c05703163d3}">JOINT</Name><SubItem><Name>sMuscleF</Name><Type GUID="{b7923ecb-ab6e-4ecf-8e2c-97df8062d915}">MUSCLE</Type></SubItem><SubItem><Name>sMuscleR</Name><Type GUID="{b7923ecb-ab6e-4ecf-8e2c-97df8062d915}">MUSCLE</Type></SubItem><SubItem><Name>sIMU</Name><Type GUID="{8658b7fe-fc19-4a02-a6e2-45c5697d8362}">IMU</Type></SubItem><SubItem><Name>fPos</Name><Type GUID="{18071995-0000-0000-0000-00000000000d}">REAL</Type></SubItem><Hides><Hide GUID="{007b0c74-2b9b-439a-83fc-7e7edc7dd070}" /><Hide GUID="{e7d871a3-dbbc-4f7c-a041-bfbe1edfafe0}" /><Hide GUID="{88af66ed-4316-4be5-ae87-7a0ed9c7357a}" /></Hides></DataType><DataType><Name GUID="{d5cccfb0-e7b8-4ca7-a534-6d1819b62361}">COORDINATE_RAW</Name><SubItem><Name>nX</Name><Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type></SubItem><SubItem><Name>nY</Name><Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type></SubItem><SubItem><Name>nZ</Name><Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type></SubItem><Hides><Hide GUID="{18097e01-3cfc-4873-9f42-de9fc0304120}" /></Hides></DataType><DataType><Name GUID="{0d2dbd1d-0a06-4ebe-89ba-5f7d9d53baf4}">IMU_RAW</Name><SubItem><Name>sRotation</Name><Type GUID="{d5cccfb0-e7b8-4ca7-a534-6d1819b62361}">COORDINATE_RAW</Type></SubItem><SubItem><Name>sGyro</Name><Type GUID="{d5cccfb0-e7b8-4ca7-a534-6d1819b62361}">COORDINATE_RAW</Type></SubItem><SubItem><Name>sAcc</Name><Type GUID="{d5cccfb0-e7b8-4ca7-a534-6d1819b62361}">COORDINATE_RAW</Type></SubItem><Hides><Hide GUID="{36665394-3af6-4262-88a1-1f3405cc52f2}" /></Hides></DataType><DataType><Name GUID="{50ad0575-6798-49cc-85d7-eee0ce1fc90e}">DRIVE_IN</Name><SubItem><Name>nStatusWord</Name><Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type></SubItem><SubItem><Name>nActPos</Name><Type GUID="{18071995-0000-0000-0000-000000000009}">DINT</Type></SubItem><SubItem><Name>nErrorCode</Name><Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type></SubItem></DataType><DataType><Name GUID="{bd169d18-aba0-456f-a5bd-7c22eff87660}">DRIVE_OUT</Name><SubItem><Name>nControlWord</Name><Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type></SubItem><SubItem><Name>nPos</Name><Type GUID="{18071995-0000-0000-0000-000000000009}">DINT</Type></SubItem><SubItem><Name>nMode</Name><Type GUID="{18071995-0000-0000-0000-000000000003}">SINT</Type></SubItem></DataType></DataTypes>
+  <Groups>
+    <Group SortOrder="701">
+      <Name>C++</Name>
+      <DisplayName>C++ Modules</DisplayName>
+    </Group>
+  </Groups>
+  <Modules>
+    <Module GUID="{21936aed-b9c5-4134-abf7-4354b3d98f68}" Group="C++">
+      <Name>AMCONTROL</Name>
+      <CLSID ClassFactory="AMCONTROL">{21936aed-b9c5-4134-abf7-4354b3d98f68}</CLSID>
+      <Licenses>
+        <License>
+          <LicenseId>{304D006A-8299-4560-AB79-438534B50288}</LicenseId>
+          <Comment>TC3 C++</Comment>
+        </License>
+      </Licenses>
+      <InitSequence>PSO</InitSequence>
+      <Contexts>
+        <Context>
+          <Id>1</Id>
+        </Context>
+      </Contexts>
+      <Interfaces>
+        <Interface DisableCodeGeneration="true">
+          <Type GUID="{00000012-0000-0000-E000-000000000064}">ITComObject</Type>
+        </Interface>
+        <Interface>
+          <Type GUID="{03000010-0000-0000-E000-000000000064}">ITcCyclic</Type>
+        </Interface>
+        <Interface DisableCodeGeneration="true">
+          <Type GUID="{03000012-0000-0000-E000-000000000064}">ITcADI</Type>
+        </Interface>
+        <Interface DisableCodeGeneration="true">
+          <Type GUID="{03000018-0000-0000-E000-000000000064}">ITcWatchSource</Type>
+        </Interface>
+      </Interfaces>
+      <Parameters>
+        <Parameter HideParameter="true">
+          <Name>TraceLevelMax</Name>
+          <Comment>Controls the amount of log messages.</Comment>
+          <BaseType GUID="{8007ae3b-86bb-40f2-b385-ef87fcc239a4}">TcTraceLevel</BaseType>
+          <PTCID>#x03002103</PTCID>
+          <ContextId>1</ContextId>
+        </Parameter>
+        <Parameter>
+          <Name>Parameter</Name>
+          <SubItem>
+            <Name>data1</Name>
+            <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+          </SubItem>
+          <SubItem>
+            <Name>data2</Name>
+            <Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+          </SubItem>
+          <SubItem>
+            <Name>data3</Name>
+            <Type GUID="{18071995-0000-0000-0000-00000000000e}">LREAL</Type>
+          </SubItem>
+          <PTCID>#x00000001</PTCID>
+          <ContextId>1</ContextId>
+        </Parameter>
+      </Parameters>
+      <DataAreas>
+        <DataArea>
+          <AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
+          <Name>Inputs</Name>
+          <ContextId>1</ContextId><Symbol><Name>sIMU_Raw</Name><BaseType GUID="{0d2dbd1d-0a06-4ebe-89ba-5f7d9d53baf4}">IMU_RAW</BaseType><ArrayInfo><LBound>0</LBound><Elements>7</Elements></ArrayInfo></Symbol><Symbol><Name>nTemperature_Raw</Name><BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType><ArrayInfo><LBound>0</LBound><Elements>12</Elements></ArrayInfo></Symbol><Symbol><Name>sDrive_In</Name><BaseType GUID="{50ad0575-6798-49cc-85d7-eee0ce1fc90e}">DRIVE_IN</BaseType><ArrayInfo><LBound>0</LBound><Elements>2</Elements></ArrayInfo></Symbol><Symbol><Name>pEncRaw</Name><BaseType GUID="{18071995-0000-0000-0000-000000000005}">UINT</BaseType><ArrayInfo><LBound>0</LBound><Elements>7</Elements></ArrayInfo></Symbol>
+        </DataArea>
+        <DataArea>
+          <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
+          <Name>Outputs</Name>
+          <ContextId>1</ContextId><Symbol><Name>nFan_Out</Name><BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType></Symbol><Symbol><Name>nPWM_Out</Name><BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType><ArrayInfo><LBound>0</LBound><Elements>12</Elements></ArrayInfo><Properties></Properties></Symbol><Symbol><Name>sDrive_Out</Name><BaseType GUID="{bd169d18-aba0-456f-a5bd-7c22eff87660}" >DRIVE_OUT</BaseType><ArrayInfo><LBound>0</LBound><Elements>2</Elements></ArrayInfo><Properties></Properties></Symbol>
+        </DataArea><DataArea><AreaNo AreaType="Standard" CreateSymbols="true">3</AreaNo><Name>Control</Name><ContextId>1</ContextId><Symbol CreateSymbol="true"><Name>sTarget</Name><BaseType GUID="{7c4606fa-c5b7-4059-afba-7c05703163d3}">JOINT</BaseType><ArrayInfo><LBound>0</LBound><Elements>7</Elements></ArrayInfo></Symbol><Symbol CreateSymbol="true"><Name>sRef</Name><BaseType GUID="{7c4606fa-c5b7-4059-afba-7c05703163d3}">JOINT</BaseType><ArrayInfo><LBound>0</LBound><Elements>7</Elements></ArrayInfo></Symbol><Symbol CreateSymbol="true"><Name>sAct</Name><BaseType GUID="{7c4606fa-c5b7-4059-afba-7c05703163d3}">JOINT</BaseType><ArrayInfo><LBound>0</LBound><Elements>7</Elements></ArrayInfo></Symbol><Symbol CreateSymbol="true"><Name>sPrev</Name><BaseType GUID="{7c4606fa-c5b7-4059-afba-7c05703163d3}">JOINT</BaseType><ArrayInfo><LBound>0</LBound><Elements>7</Elements></ArrayInfo></Symbol></DataArea><DataArea><AreaNo AreaType="Standard" CreateSymbols="true">4</AreaNo><Name>AdsCmd</Name><ContextId>1</ContextId><Symbol CreateSymbol="true"><Name>nEncReset</Name><BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType></Symbol><Symbol><Name>fControlTime</Name><BaseType GUID="{18071995-0000-0000-0000-00000000000e}">LREAL</BaseType></Symbol></DataArea><DataArea><AreaNo AreaType="Standard" CreateSymbols="true">5</AreaNo><Name>SetupInfo</Name><ContextId>1</ContextId><Symbol><Name>pEncHome</Name><BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType><ArrayInfo><LBound>0</LBound><Elements>7</Elements></ArrayInfo></Symbol></DataArea>
+      </DataAreas>
+      <InterfacePointers>
+        <InterfacePointer>
+          <PTCID>#x03002060</PTCID>
+          <Name>CyclicCaller</Name>
+          <Type GUID="{0300001e-0000-0000-e000-000000000064}">ITcCyclicCaller</Type>
+        </InterfacePointer>
+      </InterfacePointers>
+      <DataPointers />
+      <Deployment>
+        <FileEntry TargetPlatform="TwinCAT RT (x86)">
+          <SourceFile>%SOLUTIONDEPLOYMENTPATH%TwinCAT RT (x86)\%CLASSFACTORYNAME%.sys</SourceFile>
+          <DestinationFile>%TC_DRIVERAUTOINSTALLPATH%%CLASSFACTORYNAME%.sys</DestinationFile>
+        </FileEntry>
+        <FileEntry TargetPlatform="TwinCAT RT (x86)">
+          <SourceFile>%SOLUTIONDEPLOYMENTPATH%TwinCAT RT (x86)\%CLASSFACTORYNAME%.pdb</SourceFile>
+          <DestinationFile>%TC_DRIVERAUTOINSTALLPATH%%CLASSFACTORYNAME%.pdb</DestinationFile>
+        </FileEntry>
+        <FileEntry TargetPlatform="TwinCAT RT (x64)">
+          <SourceFile>%SOLUTIONDEPLOYMENTPATH%TwinCAT RT (x64)\%CLASSFACTORYNAME%.sys</SourceFile>
+          <DestinationFile>%TC_DRIVERAUTOINSTALLPATH%%CLASSFACTORYNAME%.sys</DestinationFile>
+        </FileEntry>
+        <FileEntry TargetPlatform="TwinCAT RT (x64)">
+          <SourceFile>%SOLUTIONDEPLOYMENTPATH%TwinCAT RT (x64)\%CLASSFACTORYNAME%.pdb</SourceFile>
+          <DestinationFile>%TC_DRIVERAUTOINSTALLPATH%%CLASSFACTORYNAME%.pdb</DestinationFile>
+        </FileEntry>
+      </Deployment>
+    </Module>
+  </Modules>
+</TcModuleClass>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ee55a7fb-2fdc-45f4-b6e1-891aedc64a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7ef309c1-9b0a-4573-b87e-67e6a7a795e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TwinCAT UM Files">
+      <UniqueIdentifier>{e70b6049-5458-459b-a74a-9707680a7291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TwinCAT RT Files">
+      <UniqueIdentifier>{9fde9bfa-0c13-4edb-9a25-420b5bab4ad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TwinCAT OS Files">
+      <UniqueIdentifier>{4b71b66c-c07d-43a9-9c00-7247fa949bcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TMC Files">
+      <UniqueIdentifier>{2eb23643-d21f-49c3-a97a-5b8ce09f373c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JRS">
+      <UniqueIdentifier>{4e420646-f458-4a63-8e73-72522291f447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JRS\JointControl">
+      <UniqueIdentifier>{8e0198b5-4464-4ef3-b70d-69185a9b0d91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>TwinCAT UM Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TcPch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AMCONTROLClassFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AMCONTROLInterfaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AMCONTROLServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AMCONTROLCtrl.h">
+      <Filter>TwinCAT UM Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AMCONTROLDriver.h">
+      <Filter>TwinCAT RT Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AMCONTROL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JRS\JointControl\JRL_PID.h">
+      <Filter>JRS\JointControl</Filter>
+    </ClInclude>
+    <ClInclude Include="JRS\JointControl\JRL_JointState.h">
+      <Filter>JRS\JointControl</Filter>
+    </ClInclude>
+    <ClInclude Include="JRS\JointControl\JRL_ActuatorInfo.h">
+      <Filter>JRS\JointControl</Filter>
+    </ClInclude>
+    <ClInclude Include="JRS\JointControl\JRL_ActuatorState.h">
+      <Filter>JRS\JointControl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TcPch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AMCONTROLClassFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AMCONTROLCtrl.cpp">
+      <Filter>TwinCAT UM Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AMCONTROLW32.cpp">
+      <Filter>TwinCAT UM Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AMCONTROLDriver.cpp">
+      <Filter>TwinCAT RT Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AMCONTROLMain.cpp">
+      <Filter>TwinCAT OS Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AMCONTROL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JRS\JointControl\JRL_PID.cpp">
+      <Filter>JRS\JointControl</Filter>
+    </ClCompile>
+    <ClCompile Include="JRS\JointControl\JRL_JointState.cpp">
+      <Filter>JRS\JointControl</Filter>
+    </ClCompile>
+    <ClCompile Include="JRS\JointControl\JRL_ActuatorInfo.cpp">
+      <Filter>JRS\JointControl</Filter>
+    </ClCompile>
+    <ClCompile Include="JRS\JointControl\JRL_ActuatorState.cpp">
+      <Filter>JRS\JointControl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AMCONTROL.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="AMCONTROLW32.rc">
+      <Filter>TwinCAT UM Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AMCONTROLW32.def">
+      <Filter>TwinCAT UM Files</Filter>
+    </None>
+    <None Include="AMCONTROL.tmc">
+      <Filter>TMC Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="AMCONTROLW32.idl">
+      <Filter>TwinCAT UM Files</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>
